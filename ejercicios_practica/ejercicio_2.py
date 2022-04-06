@@ -17,6 +17,15 @@ def promedio(numeros):
 
     # promedio = sumatoria_numeros / cantidad_numeros
 
+    sumatoria_numeros = 0
+    
+    for j in range(len(numeros)):
+        if len(numeros) != 0:
+            sumatoria_numeros += numeros[j]
+
+    resultado = sumatoria_numeros / len(numeros)
+
+
     # Resuelva la sumatoria y la cantidad con las herramientas
     # que desee, recomendamos usar las funciones disponibles
     # de Python para ello:    
@@ -42,5 +51,6 @@ if __name__ == '__main__':
 
     # Luego imprimir en pantalla el valor resultante:
     # print(....)
+    print(f'El promedio de los elementos de la lista recibida, es {resultado_promedio}')
 
     print("terminamos")
